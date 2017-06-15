@@ -1,81 +1,63 @@
 $(function() {
 
-  CMS.init({
+	CMS.init({
 
-    // Name of your site or location of logo file, relative to root directory (img/logo.png)
-    siteName: 'My Site',
+		// Name of your site or location of logo file ,relative to root directory (img/logo.png)
+		siteName: 'My Site',
 
-    // Tagline for your site
-    siteTagline: 'Your site tagline',
+		// Tagline for your site
+		siteTagline: 'Your site tagline',
 
-    // Email address
-    siteEmail: 'your_email@example.com',
+		// Email address
+		siteEmail: 'your_email@example.com',
 
-    // Name
-    siteAuthor: 'Your Name',
+		// Name
+		siteAuthor: 'Your Name',
 
-    // Navigation items
-    siteNavItems: [
-      { name: 'Github', href: 'https://github.com/epix360', newWindow: false},
-      { name: 'About'}
-    ],
+		// Navigation items
+		siteNavItems: [
+			{ name: 'Github', href: 'https://github.com/yourname', newWindow: false},
+			{ name: 'About'}
+		],
 
-    // Posts folder name
-    postsFolder: 'posts',
+		// Posts folder name
+		postsFolder: 'posts',
 
-    // Homepage posts snippet length
-    postSnippetLength: 120,
+		// Homepage posts snippet length
+		postSnippetLength: 120,
 
-    // Pages folder name
-    pagesFolder: 'pages',
+		// Pages folder name
+		pagesFolder: 'pages',
 
-    // Order of sorting (true for newest to oldest)
-    sortDateOrder: true,
+		// Site fade speed
+		fadeSpeed: 300,
 
-    // Posts on Frontpage (blog style)
-    postsOnFrontpage: true,
+		// Site footer text
+		footerText: '&copy; ' + new Date().getFullYear() + ' All Rights Reserved.',
 
-    // Page as Frontpage (static)
-    pageAsFrontpage: '',
+		// Mode 'Github' for Github Pages, 'Apache' for Apache server. Defaults
+		// to Github
+		mode: 'Github',
 
-    // Posts/Blog on different URL
-    postsOnUrl: '',
+		// If Github mode is set, your Github username and repo name. Defaults
+		// to Github pages branch (gh-pages)
+		githubUserSettings: {
+			username: 'yourusername',
+			repo: 'yourrepo'
+		}
 
-    // Site fade speed
-    fadeSpeed: 300,
+	});
 
-    // Site footer text
-    footerText: '&copy; ' + new Date().getFullYear() + ' All Rights Reserved.',
-
-    // Mode 'Github' for Github Pages, 'Server' for Self Hosted. Defaults
-    // to Github
-    mode: 'Github',
-
-     // If Github mode is set, your Github username and repo name.
-    githubUserSettings: {
-      username: 'epix360',
-      repo: 'cms.js'
-    },
-
-    // If Github mode is set, choose which Github branch to get files from.
-    // Defaults to Github pages branch (gh-pages)
-    githubSettings: {
-      branch: 'gh-pages',
-      host: 'https://api.github.com'
-    }
-
-  });
-
-  // Markdown settings
-  marked.setOptions({
-    renderer: new marked.Renderer(),
-    gfm: true,
-    tables: true,
-    breaks: false,
-    pedantic: false,
-    sanitize: true,
-    smartLists: true,
-    smartypants: false
-  });
+	// Markdown settings
+	marked.setOptions({
+		renderer: new marked.Renderer(),
+		gfm: true,
+		tables: true,
+		breaks: false,
+		pedantic: false,
+		sanitize: true,
+		smartLists: true,
+		smartypants: false
+	});
 
 });
