@@ -21,7 +21,7 @@ $(function() {
 		],
 
 		// Posts folder name
-		postsFolder: '_posts',
+		postsFolder: 'posts',
 
 		// Homepage posts snippet length
 		postSnippetLength: 120,
