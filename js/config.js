@@ -3,10 +3,10 @@ $(function() {
 	CMS.init({
 
 		// Name of your site or location of logo file ,relative to root directory (img/logo.png)
-		siteName: 'My Site',
+		siteName: 'EEP!',
 
 		// Tagline for your site
-		siteTagline: 'Your site tagline',
+		siteTagline: 'Tag this line',
 
 		// Email address
 		siteEmail: 'your_email@example.com',
@@ -16,12 +16,12 @@ $(function() {
 
 		// Navigation items
 		siteNavItems: [
-			{ name: 'Github', href: 'https://github.com/yourname', newWindow: false},
+			{ name: 'Github', href: 'https://github.com/epix360', newWindow: false},
 			{ name: 'About'}
 		],
 
 		// Posts folder name
-		postsFolder: 'posts',
+		postsFolder: '/posts',
 
 		// Homepage posts snippet length
 		postSnippetLength: 120,
