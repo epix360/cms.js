@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Links
 ---
 Just some links to test with.
