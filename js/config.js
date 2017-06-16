@@ -17,6 +17,7 @@ $(function() {
 		// Navigation items
 		siteNavItems: [
 			{ name: 'Github', href: 'https://github.com/epix360', newWindow: false},
+			{ name: 'About'},
 			{ name: 'Contact'},
 			{ name: 'Links'}
 		],
