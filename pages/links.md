@@ -2,8 +2,7 @@
 layout: default
 title: Links
 ---
-
-Hello! This is my awesome about page! Check out some cool links:
+Just some links to test with.
 
 * [Smashing Magazine](https://www.smashingmagazine.com)
 * [TechCrunch](http://techcrunch.com/)
